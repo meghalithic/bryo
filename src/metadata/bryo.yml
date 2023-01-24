@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bryo
+
+idspace: BRYO
+base_url: /obo/bryo
+
+products:
+- bryo.owl: https://raw.githubusercontent.com/megbalk/bryo/main/bryo.owl
+- bryo.obo: https://raw.githubusercontent.com/megbalk/bryo/main/bryo.obo
+
+term_browser: ontobee
+example_terms:
+- BRYO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/megbalk/bryo/v
+
+- prefix: /tracker/
+  replacement: https://github.com/megbalk/bryo/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/BRYO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/megbalk/bryo/main/
