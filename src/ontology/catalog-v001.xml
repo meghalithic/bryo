@@ -12,9 +12,20 @@
   <uri name="http://purl.obolibrary.org/obo/bryo/imports/pato_import.owl" uri="imports/pato_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/bryo/imports/pato_import.obo" uri="imports/pato_import.obo"/>
   
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/bco_import.owl" uri="imports/bco_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/bco_import.obo" uri="imports/bco_import.obo"/>
 
-
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/bspo_import.owl" uri="imports/bspo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/bspo_import.obo" uri="imports/bspo_import.obo"/>
   
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/iao_import.obo" uri="imports/iao_import.obo"/>
 
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
+ 
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/oba_import.owl" uri="imports/oba_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/bryo/imports/oba_import.obo" uri="imports/oba_import.obo"/>
+        
 </group>
 </catalog>

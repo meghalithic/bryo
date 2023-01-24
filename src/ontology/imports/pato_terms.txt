@@ -1,1 +1,7 @@
-
+PATO:0001648 #circumference
+PATO:0000122 #length
+PATO:0000119 #height
+PATO:0001334 #diameter
+PATO:0000921 #width
+PATO:0000125 #mass
+PATO:0001595 #depth
