@@ -1,0 +1,9 @@
+id: bryo
+title: Bryozoan Attribute Ontology
+github_org: megbalk
+repo: bryo
+import_group:
+  products:
+    - id: ro
+    - id: bfo
+    - id: pato
