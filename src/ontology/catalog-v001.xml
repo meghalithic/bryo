@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/releases/2023-01-24/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+        <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/bco_import.owl" uri="imports/bco_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/bspo_import.owl" uri="imports/bspo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/oba_import.owl" uri="imports/oba_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bryo/imports/clyh_import.owl" uri="imports/clyh_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/bryo/imports/ro_import.owl" uri="imports/ro_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/bryo/imports/ro_import.obo" uri="imports/ro_import.obo"/>
