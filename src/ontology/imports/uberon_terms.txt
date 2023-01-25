@@ -1,4 +1,4 @@
 UBERON:0008915 #pore
-UBERON_0000161 #orifice
-UBERON_0009979 #condyle
-UBERON_0008260 #spine appendage
+UBERON:0000161 #orifice
+UBERON:0009979 #condyle
+UBERON:0008260 #spine appendage
