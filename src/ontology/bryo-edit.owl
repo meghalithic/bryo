@@ -17,6 +17,16 @@ Import(<http://purl.obolibrary.org/obo/bryo/imports/bfo_import.owl>)
 
 Import(<http://purl.obolibrary.org/obo/bryo/imports/pato_import.owl>)
 
+Import(<http://purl.obolibrary.org/obo/bryo/imports/bco_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/bryo/imports/bspo_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/bryo/imports/iao_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/bryo/imports/oba_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/bryo/imports/clyh_import.owl>)
+
 
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
