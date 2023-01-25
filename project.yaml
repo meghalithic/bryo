@@ -7,3 +7,11 @@ import_group:
     - id: ro
     - id: bfo
     - id: pato
+    - id: oba
+    - id: bspo
+    - id: iao
+    - id: bco
+    - id: uberon
+    - id: clyh
+    - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl

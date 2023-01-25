@@ -12,5 +12,6 @@ import_group:
     - id: iao
     - id: bco
     - id: uberon
+    - id: clyh
     - id: ncbitaxon
       mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl

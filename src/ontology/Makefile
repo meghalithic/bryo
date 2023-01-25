@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro bfo pato oba bspo iao bco uberon ncbitaxon
+IMPORTS =  ro bfo pato oba bspo iao bco uberon clyh ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -366,6 +366,15 @@ mirror-bco: | $(TMPDIR)
 mirror-uberon: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/uberon.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: clyh
+.PHONY: mirror-clyh
+.PRECIOUS: $(MIRRORDIR)/clyh.owl
+mirror-clyh: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/clyh.owl --create-dirs -o $(MIRRORDIR)/clyh.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/clyh.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

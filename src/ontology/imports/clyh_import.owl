@@ -1,0 +1,1220 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bryo/imports/clyh_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/bryo/imports/clyh_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bryo/imports/clyh_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bryo/releases/2023-01-25/imports/clyh_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/clyh/releases/2020-05-29/clyh.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-25</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000301 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000301"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002087">
+        <rdfs:label>immediately preceded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
+        <rdfs:label>develops from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002488 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002488">
+        <rdfs:label>existence starts during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002492 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002492">
+        <rdfs:label>existence ends during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:label>gametogenesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>phase of sexual reproduction in which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization.</obo:IAO_0000115>
+        <rdfs:label>gametogenesis period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>embryonic development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>gamete period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000017">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>cleavage period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000018">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <obo:IAO_0000301>Y. Kraus et al in preparation?</obo:IAO_0000301>
+        <oboInOwl:hasExactSynonym> fertilised egg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>zygote </oboInOwl:hasExactSynonym>
+        <rdfs:label>one cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000019">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <obo:IAO_0000301>Y. Kraus et al in preparation?</obo:IAO_0000301>
+        <rdfs:label>2-cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000020">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18 degree celsius). </obo:IAO_0000115>
+        <rdfs:label>4-cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000021">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Eight cell-stage embryo (about 2h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>8-cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000022">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Sixteen cell-stage embryo (about 2.5h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>16-cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000023">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>thirty two cell-stage embryo (about 3h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>32-cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000024">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>sixty four cell-stage embryo (about 3h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>64-cell stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000025">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>blastula period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000026">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>early blastula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000027">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>mid blastula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000028">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>late blastula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000029">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>gastrula period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000030">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18 degree celsius). </obo:IAO_0000115>
+        <rdfs:label>very early gastrula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000031">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18 degree celsius).</obo:IAO_0000115>
+        <rdfs:label>early gastrula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000032">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18 degree celsius)</obo:IAO_0000115>
+        <rdfs:label>mid gastrula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000033">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Blastocoel full, no epithelisation of internal cells (20h post fertilization at18 degree celsius</obo:IAO_0000115>
+        <rdfs:label>late gastrula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>larval development</oboInOwl:hasExactSynonym>
+        <rdfs:label>planula period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000035">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18 degree celsius)</obo:IAO_0000115>
+        <rdfs:label>planula P1 stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>metamorphosis period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000041">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>torpedo shape planula that stopped swimming</obo:IAO_0000115>
+        <rdfs:label>settled planula stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>colony containing  mature or developing gonozoids , gastrozoids and stolons.</obo:IAO_0000115>
+        <rdfs:label>colony phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000054">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Non feeding polyp specialized in budding medusae</obo:IAO_0000115>
+        <rdfs:label>gonozoid development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>medusa phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000001">
+        <rdfs:label>multicellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Cell formed by fusion of a mature female reproductive cell and a mature male reproductive cell at fertilization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>zygote</oboInOwl:hasExactSynonym>
+        <rdfs:label>fertilized egg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues.</obo:IAO_0000115>
+        <rdfs:label>embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage.</obo:IAO_0000115>
+        <rdfs:label>cleaving embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage after the first cell division.</obo:IAO_0000115>
+        <rdfs:label>2-cell embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage after two division cycles.</obo:IAO_0000115>
+        <rdfs:label>4-cell embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage after three division cycles.</obo:IAO_0000115>
+        <rdfs:label>8-cell embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage after four division cycles.</obo:IAO_0000115>
+        <rdfs:label>16-cell embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage after five division cycles.</obo:IAO_0000115>
+        <rdfs:label>32-cell embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the cleavage stage after six division cycles.</obo:IAO_0000115>
+        <rdfs:label>64-cell embryo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the blastula stage - an early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel.</obo:IAO_0000115>
+        <rdfs:label>blastula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Blastula stage embryo before epithelisation. </obo:IAO_0000115>
+        <rdfs:label>early blastula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Blastula stage embryo with polarised epithelial cells.</obo:IAO_0000115>
+        <rdfs:label>mid blastula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Blastula stage embryo with polarised and columnar epithelial cells.</obo:IAO_0000115>
+        <rdfs:label>late blasutla</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism at the gastrula stage.</obo:IAO_0000115>
+        <rdfs:label>gastrula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Visible pointed oral pole but no cell ingression, Ciliogenesis starting.</obo:IAO_0000115>
+        <rdfs:label>very early gastrula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Gastrula with a few cells ingressed at pointed oral pole. Swimming.</obo:IAO_0000115>
+        <rdfs:label>early gastrula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Gastrula in which blastotocoel is half filled with ingressing cells. </obo:IAO_0000115>
+        <rdfs:label>mid gastrula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Gastrula in which Blastocoel is full but no epithelisation of internal cells.</obo:IAO_0000115>
+        <rdfs:label>late gastrula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A distinct juvenile form before metamorphosis with elongated shape and cilliated outer layer. Inner and outer tissue layers separated by basement membrane.</obo:IAO_0000115>
+        <rdfs:label>planula larva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115>A mature sexual reproductive cell having a single set of unpaired chromosomes.</obo:IAO_0000115>
+        <rdfs:label>gamete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Connected system of gastrozoid and gonozoid polyps, propagating vegetatively.</obo:IAO_0000115>
+        <rdfs:label>polyp colony</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLYH_1000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000128">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Tubular structure adhering to the substrate, connecting the bases of the polyps.</obo:IAO_0000115>
+        <rdfs:label>stolon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
+        <obo:IAO_0000115>A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
+        <rdfs:label>cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:label>life cycle stage</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
