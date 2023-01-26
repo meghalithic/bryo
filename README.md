@@ -4,7 +4,7 @@
 
 Description: An ontology for describing Bryozoa anatomy and traits.
 
-![Bryozoa](https://github.com/megbalk/bryo/blob/main/Haeckel_Bryozoa.jpg)
+![Bryozoa](Haeckel_Bryozoa.jpg)
 
 More information can be found at http://obofoundry.org/ontology/bryo
 
