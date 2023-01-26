@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/megbalk/bryo/workflows/CI/badge.svg)
 # Bryozoan Attribute Ontology
 
-Description: None
+Description: An ontology for describing Bryozoa anatomy and traits.
 
 More information can be found at http://obofoundry.org/ontology/bryo
 
