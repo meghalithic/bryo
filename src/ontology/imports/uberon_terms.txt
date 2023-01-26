@@ -2,3 +2,5 @@ UBERON:0008915 #pore
 UBERON:0000161 #orifice
 UBERON:0009979 #condyle
 UBERON:0008260 #spine appendage
+UBERON:0002553 #anatomical cavity
+UBERON:0000991 #gonad

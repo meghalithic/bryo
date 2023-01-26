@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/bryo.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,45 +9,52 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/bryo.owl>
-
-Import(<http://purl.obolibrary.org/obo/bryo/imports/ro_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/bryo/imports/bfo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/bryo/imports/pato_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/bryo/imports/bco_import.owl>)
-
+Import(<http://purl.obolibrary.org/obo/bryo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bryo/imports/bspo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/bryo/imports/iao_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/bryo/imports/oba_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/bryo/imports/clyh_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/bryo/imports/uberon_import.owl>)
-
+Import(<http://purl.obolibrary.org/obo/bryo/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bryo/imports/ncbitaxon_import.owl>)
-
-
+Import(<http://purl.obolibrary.org/obo/bryo/imports/oba_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bryo/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bryo/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bryo/imports/uberon_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Bryozoan Attribute Ontology")
 
-
 Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000010>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+
 
 ############################
 #   Classes
@@ -58,6 +64,69 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000000> "root node"@en)
 
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000001> (pore chamber)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000001> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000001> "pore chamber"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000001> <http://purl.obolibrary.org/obo/UBERON_0000064>)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008915>))
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000002> (pore chamber cavity)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000002> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000002> "pore chamber cavity"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/BRYO_0000002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0002553> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002572> <http://purl.obolibrary.org/obo/BRYO_0000001>)))
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000003> (pore chamber plate)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000003> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000003> "pore chamber plate"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BRYO_0000001>))
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000004> (primary orifice)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000004> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000004> "primary orifice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000004> <http://purl.obolibrary.org/obo/UBERON_0000161>)
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000005> (secondary orifice)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000005> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000005> "secondary orifice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000005> <http://purl.obolibrary.org/obo/UBERON_0000161>)
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000006> (lophophore orifice)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000006> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000006> "lophophore orifice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000006> <http://purl.obolibrary.org/obo/BRYO_0000007>)
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000007> (lophophore opening)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000007> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000007> "lophophore opening"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/BRYO_0000007> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BRYO_0000009>)))
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000008> (lophophore feeding organ)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000008> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000008> "lophophore feeding organ"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000008> <http://purl.obolibrary.org/obo/UBERON_0000020>)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000008> <http://purl.obolibrary.org/obo/UBERON_0000062>)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000008> <http://purl.obolibrary.org/obo/UBERON_0013765>)
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000009> (lophophorate feeding system)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000009> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000009> "lophophorate feeding system"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000009> <http://purl.obolibrary.org/obo/UBERON_0011216>)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001007>))
+
+# Class: <http://purl.obolibrary.org/obo/BRYO_0000010> (ovicell)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_0000010> <https://orcid.org/0000-0003-2699-3066>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000010> "ovicell"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000010> <http://purl.obolibrary.org/obo/UBERON_0000991>)
+
 
 )
-

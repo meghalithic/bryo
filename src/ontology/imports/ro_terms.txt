@@ -1,2 +1,2 @@
 RO:0000052 #characteristic of
-
+RO:0002572 #luminal space
