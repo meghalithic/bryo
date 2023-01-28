@@ -128,5 +128,9 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/BRYO_000
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BRYO_0000010> "ovicell"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BRYO_0000010> <http://purl.obolibrary.org/obo/UBERON_0000991>)
 
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000464> (anatomical space)
+
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000464> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+
 
 )
