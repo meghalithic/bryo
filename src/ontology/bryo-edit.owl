@@ -23,7 +23,6 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Bryozoan Attribute Ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BRYO_0000003>))
